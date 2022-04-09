@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/icon/fontawesome-free-6.1.0-web/css/all.min.css">
+    <link rel="stylesheet" href="/assets/js/main.js">
+    <link rel="stylesheet" href="/assets/css/template.css">
+    <title>Thiết kế website cho công ty Luật quốc tế Lê Văn Hiệp</title>
+</head>
+<body>
+
+    <!-- main -->
+    <div id="main">
+
+        <!-- head -->
+        <div id="head">
+            Văn phòng công ty luật quốc tế Lê Văn Hiệp tại Bình Dương
+            <div class="header">
+                <i class="fa-solid fa-phone-flip"></i>  <span>+84-39-333-6385</span>
+                <i class="fa-solid fa-envelope"></i>  <span>levanhiepdt3@gmail.com</span>
+            </div>
+        </div>
+
+        <!-- head-link -->
+        <div id="head-link">
+            <a href="#"><img class="logo" src="/assets/img/hiep2k2.jpg" alt=""></a>
+            <ul id="nav" >
+                <li  ><a class="nav-v" href="">TRANG CHỦ</a></li>
+                <li><a href="">GIỚI THIỆU</a></li>
+                <li>
+                    <a href="">LĨNH VỰC HOẠT ĐỘNG</a>
+                    <ul class="subnav">
+                        <li><a href="">LĨNH VỰC HOẠT ĐỘNG 1</a></li>
+                        <li><a href="">LĨNH VỰC HOẠT ĐỘNG 2</a></li>
+                        <li><a href="">LĨNH VỰC HOẠT ĐỘNG 3</a></li>
+                    </ul>
+                </li>   
+                <li><a href="">BẢNG PHÍ</a></li>
+                <li>
+                    <a href="">TIN TỨC</a>
+                    <ul class="subnav">
+                        <li><a href="">TIN TỨC CÔNG TY</a></li>
+                        <li><a href="">TIN TỨC CHUYÊN NGÀNH</a></li>
+                        <li><a href="">TIN TỨC PHÁP LUẬT</a></li>
+                        <li><a href="">TƯ VẤN</a></li>
+                    </ul>
+                </li>
+                <li><a href="">LIÊN HỆ</a></li>
+                <li class="sp">|</li>
+                <li> 
+                    <a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li ><a class="dk" href="#">Đăng ký</a></li> /
+                    <li ><a class="dn" href="#">Đăng nhập</a>
+                </li>
+            </ul>
+        </div>  
+
+        <!-- time -->
+        <div id="time"></div>
+
+        <!-- content -->
+        <div id="content">
+        </div>
+
+        <!-- footer -->
+        <div id="footer">
+            <ul id="foot">
+                <li><p>MEILIN INTERNATIONAL LAW FIRM</p>
+                    <ul class="foot-end">
+                        <li>Thai Hoa Sub-district, Tan Uyen, Binh Duong, Vietnam</li>
+                        <li>TEL: +84-39-333-6385</li>
+                        <li>FAX: +84-39-333-6385</li>
+                        <li>MAIL: levanhiepdt3@gmail.com</li>
+                    </ul>
+                </li>
+                <li><p>DỊCH VỤ</p>
+                    <ul class="foot-end">
+                        <li> <a href="">LĨNH VỰC HOẠT ĐỘNG 1</a> </li>
+                        <li> <a href="">LĨNH VỰC HOẠT ĐỘNG 2</a> </li>
+                        <li> <a href="">LĨNH VỰC HOẠT ĐỘNG 3</a> </li>
+                    </ul>
+                </li>
+                <li><p>ĐĂNG KÝ NHẬN BẢN TIN</p>
+                    <ul class="foot-end">
+                        <li class="sp1"></li>
+                        <li>
+                            <div class="end"> Đăng ký nhận thông tin, sản phẩm mới từ chúng tôi
+                                <input type="text" placeholder="Tên của bạn" name="username" > <br>
+                                <input type="text" placeholder="Email của bạn" name="email" > <br>
+                                <input class="button" type="submit" value="GỬI THÔNG TIN" >
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div> 
+
+    <script>
+		function dongho(){
+			var today = new Date();
+			var gio = today.getHours();
+			var phut = today.getMinutes();
+			var giay = today.getSeconds();
+
+			if(gio<10){
+				gio = "0" + gio;
+			}
+			if(phut<10){
+				phut = "0" + phut;
+			}
+			if(giay<10){
+				giay = "0" + giay;
+			}
+			document.getElementById("time").innerHTML = gio + ":" + phut + ":" + giay;
+			setTimeout("dongho()",1000);
+		}
+		dongho();
+	</script>
+</body>
+</html>
